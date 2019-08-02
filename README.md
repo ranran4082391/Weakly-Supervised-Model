@@ -3,3 +3,4 @@
 `DGL0.3`
 * DGL Basics
 * Deep Graph Library(Pytorch)
+* Capsule Network(DGL&Pytorch)
