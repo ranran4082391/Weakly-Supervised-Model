@@ -32,4 +32,4 @@ g.add_edges(src, 0)
 nx.draw(g.to_networkx(), with_labels=True)
 plt.show()
 ```
-![]()
+![](https://github.com/ranran4082391/Weakly-Supervised-Model/blob/master/DGL%20Basics/dgl.png)
