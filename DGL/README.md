@@ -8,6 +8,7 @@
 # Problem Description
 First, build two social networks as shown in the figure.
 ![](https://github.com/ranran4082391/Weakly-Supervised-Model/blob/master/DGL/network.png)
+
 The task is to predict which party each member would like to join (0 or 33) based on the social network.
 # code step
 ## Constructing Relational Graph Network
@@ -73,7 +74,7 @@ if __name__ == '__main__':
     nx.draw(nx_G, pos, with_labels=True, node_color=[[0.7, 0.7, 0.7]]) #node_color 节点颜色的深浅程度
     plt.show()
 ```
-[DGL](https://docs.dgl.ai/tutorials/models/index.html)
+Learning DGL Website ：[DGL](https://docs.dgl.ai/tutorials/models/index.html)
 # Graph Convolutional Network (GCN)
 ```python
 import torch
