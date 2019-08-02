@@ -1,8 +1,35 @@
 # Goal
-* Learn to draw different geometric shapes with OpenCV
-* You will learn these functions : cv2.line(), cv2.circle() , cv2.rectangle(), cv2.ellipse(), cv2.putText() etc.
-# Code
- * img: The image where you want to draw the shapes
- * color: Color of the shape. for BGR, pass it as a tuple, eg: (255,0,0) for blue. For grayscale, just pass the scalar value.
- * thickness: Thickness of the line or circle etc. If **-1** is passed for closed figures like circles, it will fill the shape. default thickness = 1
- * lineType: Type of line, whether 8-connected, anti-aliased line etc. By default, it is *** 8-connected ***. `cv2.LINE_AA` gives anti-aliased line which looks great for curves.
+* To create a graph.
+* To read and write node and edge representations.
+# Graph Creation
+* The design of DGLGraph was influenced by other graph libraries. Indeed, you can create a graph from `networkx`, and convert it into a DGLGraph and vice versa:
+```python
+import networkx as nx
+import dgl
+
+g_nx = nx.petersen_graph()
+g_dgl = dgl.DGLGraph(g_nx)
+
+import matplotlib.pyplot as plt
+plt.subplot(121)
+nx.draw(g_nx, with_labels=True)
+plt.subplot(122)
+nx.draw(g_dgl.to_networkx(), with_labels=True)
+
+plt.show()
+```
+They are the same graph, except that `DGLGraph` is always ***directional***.
+***One can also create a graph by calling DGL’s own interface.***
+Now let’s build a star graph. `DGLGraph nodes` are consecutive range of integers between `0 and number_of_nodes()` and can grow by calling add_nodes. DGLGraph edges are in order of their additions. Note that edges are accessed in much the same way as nodes, with one extra feature of edge broadcasting:
+```python
+import dgl
+import torch as th
+import networkx as nx
+import matplotlib.pyplot as plt
+g = dgl.DGLGraph()
+src = th.tensor(list(range(1, 10)))
+g.add_edges(src, 0)
+nx.draw(g.to_networkx(), with_labels=True)
+plt.show()
+```
+![]()
