@@ -7,7 +7,7 @@
  * networkX 2.3+ (***A Visualization Tool for Displaying Graph Relations***)
 # Problem Description
 First, build two social networks as shown in the figure.
-![]()
+![](https://github.com/ranran4082391/Weakly-Supervised-Model/blob/master/DGL/network.png)
 The task is to predict which party each member would like to join (0 or 33) based on the social network.
 # code step
 ## Constructing Relational Graph Network
