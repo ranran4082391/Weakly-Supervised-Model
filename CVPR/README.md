@@ -5,7 +5,7 @@
 * Cartoons and paper-cut drawings have **instance-level annotations**, while watercolor paintings have only **image-level annotations**.
 * In addition, the classes to be detected in the target domain are all or a `subset` of those in the source domain
 # Conclusion
-We test our methods on our newly collected datasets1 containing three image domains, and achieve an improvement of approximately 5 to 20 percentage points in terms of ***mean average precision (mAP)*** compared to the best-performing baselines.
+* We test our methods on our newly collected datasets1 containing three image domains, and achieve an improvement of approximately 5 to 20 percentage points in terms of ***mean average precision (mAP)*** compared to the best-performing baselines.
 
 # Preparations for the paper
 ```Datasets and codes```
@@ -14,7 +14,8 @@ https://naoto0804.github.io/cross_domain_detection
 ```The Best Performing Full Supervision Detector:```
 * R. Girshick. Fast R-CNN. In ICCV, 2015. 1
 * W. Liu, D. Anguelov, D. Erhan, C. Szegedy, S. Reed, C.-Y.Fu, and A. C. Berg. ***SSD: Single shot multibox detector.*** In ECCV, 2016.
-* Y. Li, K. He, J. Sun, et al. ***R-FCN: Object detection via region-based fully convolutional networks***. In NIPS, 2016
+* Y. Li, K. He, J. Sun, et al. ***R-FCN: Object detection via region-based fully convolutional networks***. In NIPS, 2016.
+
 ```Weakly Supervised Detection```
 * Many existing methods are built upon `region-of-interest (RoI)` extraction methods such as selective search [36]
 * Feature extraction for each region, region selection,and classification of the selected region are performed through multiple instance learning (***MIL***), or two-stream CNN (V. Kantorov, M. Oquab, M. Cho, and I. Laptev. ***ContextLocNet***: Context-aware deep network models for weakly supervised localization. In ECCV, 2016.)
@@ -26,7 +27,7 @@ https://naoto0804.github.io/cross_domain_detection
 * This generation is achieved by image-to-image translation methods from unpaired examples such as ***CycleGAN***
 [CycleGan](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
   
-  ```This paper support raw Datasets```
+```This paper support raw Datasets```
   
 | Name | Classes | number | 
 | - | :-: | -: | 
@@ -36,7 +37,6 @@ https://naoto0804.github.io/cross_domain_detection
 
 # Tip about dataset 
 * This paper using Amazon Mechanical Turk, there are similar robotic service software in China, which is very efficient.
-
 
 
 
@@ -57,4 +57,5 @@ https://naoto0804.github.io/cross_domain_detection
 * In Sec. <font color=red>3</font>, we confirm that our framework is generalized for a variety of domains using Watercolor2k and Comic2k. 
 * In Sec. <font color=red>4</font>, we show actual detection results and the generateddomain-transferred images for further discussion.
 
-
+## Other
+VOC2007-trainval and VOC2012-trainval [6] were used as images in the <font face="黑体" color=green size=5>source domain</font>
