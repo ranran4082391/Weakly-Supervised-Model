@@ -21,8 +21,9 @@ https://naoto0804.github.io/cross_domain_detection
   
   ```Datasets```
   
-|Name | sample number| 
-|- | :-: |-: | 
-|Clipart1k || 1000 |
-|Watercolor2k|| 2000| 
-|Comic2k ||2000|
+| Name | Academy | score | 
+| - | :-: | -: | 
+| Harry Potter | Gryffindor| 90 | 
+| Hermione Granger | Gryffindor | 100 | 
+| Draco Malfoy | Slytherin | 90 |
+
