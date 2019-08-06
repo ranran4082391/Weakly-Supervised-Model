@@ -10,6 +10,7 @@ We test our methods on our newly collected datasets1 containing three image doma
 # Preparations for the paper
 ```Datasets and codes```
 https://naoto0804.github.io/cross_domain_detection
+
 ```The Best Performing Full Supervision Detector:```
 * R. Girshick. Fast R-CNN. In ICCV, 2015. 1
 * W. Liu, D. Anguelov, D. Erhan, C. Szegedy, S. Reed, C.-Y.Fu, and A. C. Berg. ***SSD: Single shot multibox detector.*** In ECCV, 2016.
@@ -19,8 +20,9 @@ https://naoto0804.github.io/cross_domain_detection
 [<a>CycleGan](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
   
   ```Datasets```
-  Name | sample number 
-- | :-: | 
-Clipart1k | 1000 
-Watercolor2k | 2000 
-Comic2k | 2000
+  
+|Name | sample number| 
+|- | :-: |-: | 
+|Clipart1k || 1000 |
+|Watercolor2k|| 2000| 
+|Comic2k ||2000|
