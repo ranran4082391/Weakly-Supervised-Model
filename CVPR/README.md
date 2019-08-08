@@ -23,7 +23,7 @@ https://naoto0804.github.io/cross_domain_detection
 ## Cross-domain Object Detection
 * Using an object detector that is neither trained nor finetuned for the target domain causes a significant `drop` in performance as shown in [38]. (This is why this paper uses `DT`.)
 
-## In this paper, the method of generating instance-level annotation image is presented
+```In this paper, the method of generating instance-level annotation image is presented```
 * This generation is achieved by image-to-image translation methods from unpaired examples such as ***CycleGAN***
 [CycleGan](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
   
@@ -58,4 +58,5 @@ https://naoto0804.github.io/cross_domain_detection
 * In Sec. <font color=red>4</font>, we show actual detection results and the generateddomain-transferred images for further discussion.
 
 ## Other
-VOC2007-trainval and VOC2012-trainval [6] were used as images in the <font face="黑体" color=green size=5>source domain</font>
+***VOC2007-trainval and VOC2012-trainval*** [6] were used as images in the <font face="黑体" color=green size=5>source domain</font>
+
