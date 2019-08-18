@@ -1,7 +1,10 @@
-# Weakly-Supervised-Model
-**For various semi-supervised graph models**
-`DGL0.3`
-* DGL Basics
-* Deep Graph Library(Pytorch)
-* Capsule Network(DGL&Pytorch)
-* Cross-Domain `Weakly-Supervised Oject Detction` through Progressive Domain Adaptation(***CVPR***)
+# Bayesian Optimization
+**Background**
+```In complex engineering problems we often come across parameters that have to be tuned using several time-consuming and noisy evaluations. When the number of parameters is not small or if some of the parameters are continuous, using large factorial designs (e.g., “grid search”) or global optimization techniques for optimization require too many evaluations than is practically feasible. These types of problems show up in a diversity of applications, such as```
+
+* Tuning Internet service parameters and selection of weights for recommender systems
+* Hyperparameter optimization for machine learning
+* Tuning design parameters and rule-of-thumb heuristics for hardware design
+
+```Bayesian optimization (BO) allows us to tune parameters in relatively few iterations by building a smooth model from an initial set of parameter configurations (referred to as the "surrogate model") to predict the outcomes for yet unexplored parameter configurations. This represents an adaptive approach where the observations from previous evaluations are used to decide what parameter configurations to evaluate next. The same strategy can be used to predict the expected gain from all future evaluations and decide on early termination, if the expected benefit is smaller than what is worthwhile for the problem at hand.```
+
